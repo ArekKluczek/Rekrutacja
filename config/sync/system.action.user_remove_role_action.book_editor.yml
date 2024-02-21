@@ -1,0 +1,14 @@
+uuid: 96a48c3b-5ba2-4428-ae1e-7f592d8932dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.book_editor
+  module:
+    - user
+id: user_remove_role_action.book_editor
+label: 'Remove the Book editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: book_editor

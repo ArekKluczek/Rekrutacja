@@ -1,0 +1,37 @@
+uuid: 25003fe7-14b7-42cd-8993-4bddb76f740c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publishing.field_address
+    - field.field.node.publishing.field_publishing_name
+    - node.type.publishing
+  module:
+    - user
+id: node.publishing.default
+targetEntityType: node
+bundle: publishing
+mode: default
+content:
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_publishing_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

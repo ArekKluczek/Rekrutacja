@@ -1,0 +1,26 @@
+uuid: 67c8f1c0-8494-4b90-bd64-1464aa46dccc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - filter.format.full_html
+    - node.type.author
+  module:
+    - text
+id: node.author.field_biography
+field_name: field_biography
+entity_type: node
+bundle: author
+label: Biography
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

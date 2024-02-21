@@ -1,0 +1,15 @@
+uuid: 6ed1247b-1d14-4675-ac9d-acf92a352df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.book
+  module:
+    - node
+id: book_editor
+label: 'Book editor'
+weight: 4
+is_admin: null
+permissions:
+  - 'create book content'
+  - 'edit any book content'

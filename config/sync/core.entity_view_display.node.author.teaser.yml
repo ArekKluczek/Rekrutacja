@@ -1,0 +1,26 @@
+uuid: 4846e5a3-599c-4530-9951-e6adf3d3c728
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.author.field_biography
+    - field.field.node.author.field_name
+    - field.field.node.author.field_surname
+    - node.type.author
+  module:
+    - user
+id: node.author.teaser
+targetEntityType: node
+bundle: author
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_biography: true
+  field_name: true
+  field_surname: true

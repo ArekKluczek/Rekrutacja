@@ -1,0 +1,7 @@
+library.settings:
+  path: '/admin/config/system/admin-custom-form'
+  defaults:
+    _form: '\Drupal\library\Form\LibraryForm'
+    _title: 'Custom Admin Form'
+  requirements:
+    _permission: 'administer site configuration'

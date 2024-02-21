@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function custom_subtheme_page_attachments_alter(array &$attachments){
+  foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
+    switch($key){
+      case 1:
+        if($attachment[1] == 'system_meta_generator'){
+          unset($attachments['#attached']['html_head'][$key]);
+          \Drupal::messenger()->addMessage('$key: 1 Generator meta tag removed');
+        }
+        break;
+      case 2:
+        if($attachment[1] == 'system_meta_generator'){
+          unset($attachments['#attached']['html_head'][$key]);
+          \Drupal::messenger()->addMessage('$key: 2 Generator meta tag removed');
+        }
+        break;
+    }
+  }
+}

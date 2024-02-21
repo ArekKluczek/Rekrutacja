@@ -1,0 +1,6 @@
+library.admin_settings_form:
+  title: 'Library settings'
+  description: 'Configure library settings.'
+  parent: system.admin_config_system
+  route_name: library.settings
+  weight: 100

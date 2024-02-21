@@ -1,0 +1,8 @@
+uuid: 155f190c-0b28-4e0b-abe1-088f25c691b8
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Provides category taxonomy term.'
+weight: 0

@@ -1,0 +1,19 @@
+uuid: f25da131-15a6-4b6b-a346-bd5bf714d9b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publishing_name
+    - node.type.publishing
+id: node.publishing.field_publishing_name
+field_name: field_publishing_name
+entity_type: node
+bundle: publishing
+label: 'Publishing name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

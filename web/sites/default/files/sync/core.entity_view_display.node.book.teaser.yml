@@ -1,0 +1,32 @@
+uuid: edb1118a-df2b-4f6d-9331-488760111477
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.book.field_additional_pictures
+    - field.field.node.book.field_author
+    - field.field.node.book.field_category
+    - field.field.node.book.field_description
+    - field.field.node.book.field_picture
+    - field.field.node.book.field_publishing
+    - node.type.book
+  module:
+    - user
+id: node.book.teaser
+targetEntityType: node
+bundle: book
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_additional_pictures: true
+  field_author: true
+  field_category: true
+  field_description: true
+  field_picture: true
+  field_publishing: true

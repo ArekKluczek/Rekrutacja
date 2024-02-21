@@ -1,0 +1,9 @@
+name: Custom Subtheme
+type: theme
+description: 'Custom subtheme.'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+base theme: claro
+libraries:
+  - custom_subtheme/global-styling
+
